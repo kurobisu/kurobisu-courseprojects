@@ -14,7 +14,6 @@ body.night-theme {
 }
 
 header {
-    background-color: green;
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -32,10 +31,10 @@ header .logo:hover,
 header .image-button:hover,
 main .cartao-pokemon:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 main {
-    background-color: antiquewhite;
     padding: 25px;
 }
 
@@ -46,7 +45,7 @@ main .listagem-pokemon {
     justify-content: center;
 }
 main .cartao-pokemon {
-    background-color: #8de3ec;
+    background-color: #d8e3ec;
     width: 200px;
     padding: 15px;
     display: flex;
@@ -78,54 +77,41 @@ main .cartao-pokemon .informacoes span {
 }
 
 main .cartao-pokemon .gif {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
 }
 
 main .cartao-pokemon .tipos {
     display: flex;
     gap: 15px;
 }
-main .cartao-pokemon .tipos {
+main .cartao-pokemon .tipo {
     padding: 8px;
     border-radius: 10px;
 }
 
-.tipo-grama {
+.grama {
     background-color: #7ac74c;
-    padding: 10px;
-    border-radius: 8px;
 }
 
-.tipo-veneno {
+.veneno {
     background-color: #df67ddfb;
-    padding: 10px;
-    border-radius: 8px;
 }
 
-.tipo-fogo {
+.fogo {
     background-color: #ee8130;
-    padding: 10px;
-    border-radius: 8px;
 }
 
-.tipo-agua {
-    background-color: #6390f0;
-    padding: 10px;
-    border-radius: 8px;
-    
+.agua {
+    background-color: #6390f0;    
 }
 
-.tipo-inseto {
+.inseto {
     background-color: #a6b91a;
-    padding: 10px;
-    border-radius: 8px;
 }
 
-.tipo-voador {
+.voador {
     background-color: aliceblue;
-    padding: 10px;
-    border-radius: 8px;
 }
 
 main .descricao {
