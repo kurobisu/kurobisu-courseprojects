@@ -1,6 +1,136 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&display=swap");
 
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+body.night-theme {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+header .logo,
+header .image-button {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+header #button-change-theme {
+    background: none;
+    border: none;
+}
+header .logo:hover,
+header .image-button:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.1);
+}
+
+main {
+    background-color: antiquewhite;
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+main .cartao-pokemon {
+    background-color: #8de3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+}
+
+.night-theme .cartao-hover {
+    background-color: #a8a8a8;
+}
+
+.cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 70px;
+    height: 70px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+main .cartao-pokemon .tipos {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.tipo-grama {
+    background-color: #7ac74c;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.tipo-veneno {
+    background-color: #df67ddfb;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.tipo-fogo {
+    background-color: #ee8130;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.tipo-agua {
+    background-color: #6390f0;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+.tipo-inseto {
+    background-color: #a6b91a;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.tipo-voador {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
 }
