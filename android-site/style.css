@@ -25,10 +25,63 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
     background-color: var(--cor0);
 }
 
 a.externo::after {
-    content: '\00A0\1F517';
+    content: "\00A0\1F517";
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding-top: 40px;
+    min-height: 150px;
+    text-align: center;
+}
+#principal {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.404);
+    padding: 15px;
+}
+.slogan {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding: 10px 15px 5px 15px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+}
+nav {
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.486);
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main {
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
+}
+main h1 {
+    font-family: var('--fonte-android');
 }
