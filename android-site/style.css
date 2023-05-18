@@ -7,7 +7,7 @@
     font-weight: normal;
 }
 :root {
-    --cor0: #ebe5c5;
+    --cor0: #c5ebd6;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
     --cor3: #2fa866;
@@ -16,7 +16,7 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", "cursive";
-    --fonte-android: "Android", "cursive;"
+    --fonte-android: "Android", "cursive";
 }
 
 * {
@@ -76,22 +76,23 @@ nav > a:hover {
 
 main {
     background-color: white;
-    min-width: 300px;
+    min-width: 270px;
     max-width: 900px;
     margin-bottom: 30px;
     padding: 20px;
     margin: auto;
+    margin-bottom: 20px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
 }
 
-main h2 {
+main h1 {
     font-family: var(--fonte-android);
     color: var(--cor5);
     padding: 10px 0px 10px 0px;
 }
-main h3 {
+main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
     font-size: 1.3em;
@@ -107,4 +108,64 @@ main p {
     text-indent: 20px;
     text-align: justify;
     line-height: 1.4em;
+    margin: 15px 0px;
+}
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+main img {
+    max-width: 100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
