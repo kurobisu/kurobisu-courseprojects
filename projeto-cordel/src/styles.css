@@ -12,6 +12,11 @@
     --fonte2: 'Passion One', 'cursive';
     --fonte3: 'Sriracha', 'cursive';
 }
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
 header {
     background-color: black;
     color: white;
@@ -19,31 +24,60 @@ header {
 }
 header > h1 {
     font-family: var(--fonte2);
-    font-size: 3.8vw;
+    font-variant: small-caps;
+    font-size: 3em;
     padding-top: 30px;
 }
 header > p {
-    font-family: var(--fonte1);
     padding-bottom: 30px;
 }
-a {
+header a, footer a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+/*    */
 section {
     font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
     font-size: 3.5vw;
+    padding-left: 30px;
 }
 section > p {
-    padding-bottom: 20px;
-    margin: 30px;
+    padding-bottom: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.363);
+    background-position: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.288);
+    text-shadow: 1px 1px 0px black;
 }
 
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
 
 footer {
     background-color: black;
