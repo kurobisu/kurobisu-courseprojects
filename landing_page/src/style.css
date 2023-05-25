@@ -45,7 +45,38 @@ header > img {
     align-items: center;
     justify-content: space-around;
 }
-
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+}
+.conteudo-principal-escrito-botao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.258);
+    font-family: 'Sarala', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+}
+.conteudo-principal-imagem {
+    height: 430px;
+}
 
 .rodape {
     border-top: 0.4px solid #FFF2F7;
