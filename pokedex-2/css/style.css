@@ -22,7 +22,7 @@ main {
 
 .pokedex {
     width: 100%;
-    max-width: ;
+    max-width: 400px;
 }
 
 .pokemon_image {
@@ -72,4 +72,23 @@ main {
     left: 50%;
     width: 65%;
     transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, irem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0px #222, -4px 6px 0 black;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
 }
