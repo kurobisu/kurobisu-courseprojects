@@ -13,3 +13,21 @@
 img {
     width: 100vw;
 }
+
+footer {
+    background-color: darkred;
+    margin-top: -5px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+footer:hover {
+    background-color: red;
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
