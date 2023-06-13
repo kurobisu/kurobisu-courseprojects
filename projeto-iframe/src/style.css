@@ -57,5 +57,11 @@ section#redes-sociais img:hover {
 }
 
 section#redes-sociais {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section#redes-sociais a {
+    margin-bottom: 10px;
 }
